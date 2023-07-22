@@ -14,6 +14,14 @@ import (
 	"github.com/rwcarlsen/goexif/exif"
 )
 
+/*
+use the below command to run this go program (html is optional, pass that if you need the exif data to be written in html file too)
+
+go run main.go /images/directory/path html
+
+** the program will generate a csv file with the exif data of the images in the provided directory and its sub-directory **
+** if html is passed in the command line argument then the same data is also written in a html file **
+*/
 func main() {
 	if len(os.Args) == 1 {
 		fmt.Println("No directory path provided.")
